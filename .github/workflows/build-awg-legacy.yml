@@ -135,6 +135,7 @@ jobs:
           PY
 
       - name: Upload packages
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: amneziawg-legacy-candidate
